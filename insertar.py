@@ -6,14 +6,19 @@ from peewee import *
 
 from tablas import Cliente
 
-db = MySQLDatabase ("hoteles2", host='localhost', port=3306, user='root', password='maido')
-db.connect()
+import conexion
+
+db = conexion.conectar_bd()
 
 def insertar_clientes ():
    
    with open ("ficheros/clientes.txt") as cl:
         for line in cl.readlines():
-            users = [Cliente(dni=line.split()[0], nombre = line.split()[1], nacionalidad = line.split()[2])]
+            dni=line.split()[0]
+            nombre_cliente = line.split()[1]
+            tlf = line.split()[2]
+            email = line.split()[3]
+            users = [Cliente(dni=dni, nombre_cliente=nombre_cliente, tlf=tlf, email=email)]
         
         with db.atomic():
             Cliente.bulk_create(users)

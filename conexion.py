@@ -5,8 +5,8 @@ def conectar_bd():
         conexion_bd = MySQLDatabase(
             'Empresa',
             user='usuario',
-            password='usuario',
-            host='127.0.0.1',
+            password='hola',
+            host='localhost', # Lo hice con docker, puerto 3306:3306
             port=3306
         )
 

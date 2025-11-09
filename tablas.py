@@ -17,7 +17,6 @@ class Cliente(BaseModel):
     class Meta:
         table_name = "clientes"
 
-
 class Empleado(BaseModel):
     dni = CharField(max_length=9, primary_key=True)
     nombre = CharField()
