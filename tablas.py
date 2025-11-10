@@ -17,6 +17,7 @@ class Cliente(BaseModel):
     class Meta:
         table_name = "clientes"
 
+
 class Empleado(BaseModel):
     dni = CharField(max_length=9, primary_key=True)
     nombre = CharField()
@@ -24,7 +25,7 @@ class Empleado(BaseModel):
     email = CharField()
 
     class Meta:
-        table_name = "ventas"
+        table_name = "empleados"
 
 
 class Proyecto(BaseModel):
@@ -56,4 +57,5 @@ def crear():
         print("Tablas creadas correctamente.")
     except Exception as e:
         print("Error: No se pudieron crear las tablas: ", e)
+    return base_datos
         

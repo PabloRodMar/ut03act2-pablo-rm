@@ -1,0 +1,5 @@
+Sistema_de_Gestion Desarrollo_de_un_sistema_para_la_gestion_interna 2023-01-15 2023-09-30 150000.00 23456784X 12345678A
+Pagina_Web_Corporativa Creacion_de_la_pagina_web_de_la_empresa 2023-03-01 2023-07-15 50000.00 C002 23456789B
+Aplicacion_Movil Desarrollo_de_una_app_para_android_e_ios 2023-02-10 2023-12-20 200000.00 C003 34567890C
+Rediseño_de_Imagen Actualizacion_del_logotipo_y_material_corporativo 2023-04-05 2023-06-25 30000.00 C004 45678901D
+Integracion_de_Software Implementacion_de_un_sistema_de_inventario 2023-05-12 2023-10-30 120000.00 C005 56789012E
