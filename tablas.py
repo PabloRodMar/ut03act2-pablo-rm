@@ -3,6 +3,8 @@ import conexion
 
 base_datos = conexion.conectar_bd()
 
+# La clase BaseModel necesita la conexión con la base de datos, es por eso que la única conexión
+# de la práctica se realiza aquí, se retorna al main y se utiliza desde ahí.
 class BaseModel(Model):
     class Meta:
         database = base_datos
